@@ -1,0 +1,17 @@
+<!doctype html><html><head><style>html,input{background:#fff;color:#000;font-family:Arial;}input{font-size:16px;border:0;width:30px}</style></head>
+<body>QR Code Size: <input>Position Offset: <input>QR Code Value: <input style="width:400px"><canvas></canvas><script src='logic.js'></script><script>
+var p=document.querySelector("canvas"),c=p.getContext("2d"),C=document.querySelectorAll('input');C[0].value=15;C[1].value=95;C[2].value="wwww.wikipedia.org";
+
+function f1()
+{
+    c.clearRect(0,0,p.width,p.height);
+    
+    let e=C[1].value,z=C[0].value;if(z.length<1){z=1}else{z=parseInt(z);if(z<1){z=1}}
+    if(e.length<1){e=0}else{e=parseInt(e)}
+    
+    qg(C[2].value,z,e,e);
+}
+   
+C[0].onblur=C[1].onblur=f1;document.onkeyup=function(e){f1()}
+function f0(){p.width=p.style.width=window.innerWidth;p.height=p.style.height=window.innerHeight;j=window.innerWidth/1440;k=window.innerHeight/815;c.fillStyle="#000";f1()}f0();window.onresize=f0;
+</script></body></html>
