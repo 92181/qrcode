@@ -8,3 +8,5 @@ The library can be easly used to generate QR codes on a HTML canvas. It can be e
 // It can be called with the following parameters: text, size, offset y & x.
 qg("wikipedia.org",12,50,50);
 ```
+# License
+This project is licenced under the permissive MIT license.
