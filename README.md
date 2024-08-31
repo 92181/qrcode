@@ -9,8 +9,11 @@ The index file can be used to interactively try out the library.
 The library can be easly used to generate QR codes on a HTML canvas. It can be embedded in several ways, inlined or not. It can be used as seen below.
 
 ```javascript
-// It can be called with the following parameters: text, size, offset y & x.
-qg("wikipedia.org",12,50,50);
+// Draw A QR Code On The Canvas (Text, Canvas, Size, Offset X, Offset Y);
+qg("wikipedia.org");qb(ctx,12,50,50);
+
+// Return An Path And Append The Path To An SVG (Text, SVG, Path);
+qg("wikipedia.org");qv(c,p);
 ```
 # License
 This project is licenced under the permissive MIT license.
