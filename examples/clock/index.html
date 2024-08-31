@@ -1,0 +1,11 @@
+<!doctype html><html><head><style>html,input{background:#fff;color:#000;font-family:Arial;}</style></head><body><p></p><canvas></canvas><script src='../../logic.js'></script><script>
+var p=document.querySelector("canvas"),c=p.getContext("2d"),C=document.querySelector('p');
+
+function f1()
+{
+  c.clearRect(0,0,p.width,p.height);grt=new Date();tx0=grt.getHours();tx1=grt.getMinutes();tx2=grt.getSeconds();if(tx0<10){tx0="0"+tx0}if(tx1<10){tx1="0"+tx1}if(tx2<10){tx2="0"+tx2}
+  txt=grt.getFullYear()+" - "+tx0+":"+tx1+":"+tx2+";";C.innerText=txt;qg(txt);qb(c,20,100,100);requestAnimationFrame(f1);
+}
+
+function f0(){p.width=window.innerWidth;p.height=window.innerHeight;j=window.innerWidth/1440;k=window.innerHeight/815;c.fillStyle="#000"}f0();f1();window.onresize=f0;
+</script></body></html>
