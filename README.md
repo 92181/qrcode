@@ -4,7 +4,7 @@ A very tiny and performant QR code generation library, The main logic is around 
 Various things that it can do are...
 * Write directly to a Javascript canvas, while changing the color, size and position.
 * Export as an vector image (SVG), usefull to be used along with html, or to save it in high resolution.
-* Be used as clock, exchange for encryption keys, or use the raw QR code data as a flat array for further processing.
+* Be used as clock, exchange for encryption keys, or use the raw data as a flat array for further processing.
 
 # Usage
 The library has three demo files, an basic, clock and SVG demo. All contain example use cases of the library. 
