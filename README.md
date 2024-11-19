@@ -22,4 +22,4 @@ qg("wikipedia.org");qb(ctx,12,50,50);
 qg("mailto:google@gmail.com");qv(c,p);
 ```
 # License
-This project is licenced under the permissive MIT license.
+This project is licensed under the permissive MIT license.
