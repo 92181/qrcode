@@ -23,3 +23,5 @@ qg("mailto:google@gmail.com");qv(c,p);
 ```
 # License
 This project is part of the public domain, feel free to use it in whatever form you want.
+
+Sources: qrcode.js (MIT License) and [https://www.nayuki.io/](https://www.nayuki.io/page/qr-code-generator-library#generation-procedure) (MIT License)
